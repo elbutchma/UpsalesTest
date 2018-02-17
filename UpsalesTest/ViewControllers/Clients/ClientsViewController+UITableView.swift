@@ -30,4 +30,14 @@ extension ClientsViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = ClientsTableViewFooterView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 35))
+        
+        return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 35
+    }
 }

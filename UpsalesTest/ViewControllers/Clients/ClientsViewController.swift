@@ -40,7 +40,7 @@ class ClientsViewController: UIViewController {
         clientsTableView.register(clientsCellNib, forCellReuseIdentifier: clientsTableViewCellIdentifier)
         clientsTableView.delegate = self
         clientsTableView.dataSource = self
-        clientsTableView.tableFooterView = UIView(frame: CGRect.zero)
+//        clientsTableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     private func setupViews() {

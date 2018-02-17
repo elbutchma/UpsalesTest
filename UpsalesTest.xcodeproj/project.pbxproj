@@ -42,6 +42,8 @@
 		FA72512C2038B8850066C631 /* FilterUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72512A2038B8850066C631 /* FilterUsersTableViewCell.swift */; };
 		FA72512D2038B8850066C631 /* FilterUsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA72512B2038B8850066C631 /* FilterUsersTableViewCell.xib */; };
 		FA72512F2038B9400066C631 /* FilterViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72512E2038B9400066C631 /* FilterViewController+UITableView.swift */; };
+		FA7251312038EBBC0066C631 /* ClientsTableViewFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251302038EBBC0066C631 /* ClientsTableViewFooterView.swift */; };
+		FA7251332038EBCF0066C631 /* ClientsTableViewFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7251322038EBCF0066C631 /* ClientsTableViewFooterView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		FA72512A2038B8850066C631 /* FilterUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterUsersTableViewCell.swift; sourceTree = "<group>"; };
 		FA72512B2038B8850066C631 /* FilterUsersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterUsersTableViewCell.xib; sourceTree = "<group>"; };
 		FA72512E2038B9400066C631 /* FilterViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterViewController+UITableView.swift"; sourceTree = "<group>"; };
+		FA7251302038EBBC0066C631 /* ClientsTableViewFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTableViewFooterView.swift; sourceTree = "<group>"; };
+		FA7251322038EBCF0066C631 /* ClientsTableViewFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientsTableViewFooterView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				FA7250E12038A7060066C631 /* CustomCells */,
+				FA7251302038EBBC0066C631 /* ClientsTableViewFooterView.swift */,
+				FA7251322038EBCF0066C631 /* ClientsTableViewFooterView.xib */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				FA72511D2038B4E50066C631 /* FilterCriteriaTableViewCell.xib in Resources */,
 				FA72510C2038B0070066C631 /* ClientsTableViewCell.xib in Resources */,
 				FA7251132038B34A0066C631 /* Filters.storyboard in Resources */,
+				FA7251332038EBCF0066C631 /* ClientsTableViewFooterView.xib in Resources */,
 				FA7250CF2038A47E0066C631 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +519,7 @@
 				FA7251292038B7DE0066C631 /* FiltersRepository.swift in Sources */,
 				FA7251102038B24D0066C631 /* UIUtilities.swift in Sources */,
 				FA7251042038ADFC0066C631 /* Client.swift in Sources */,
+				FA7251312038EBBC0066C631 /* ClientsTableViewFooterView.swift in Sources */,
 				FA7251252038B78D0066C631 /* FilterUsersPresenter.swift in Sources */,
 				FA7250EE2038A7700066C631 /* APIClient.swift in Sources */,
 				FA7250F82038AA820066C631 /* ClientsViewController.swift in Sources */,

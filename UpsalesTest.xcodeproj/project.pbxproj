@@ -12,6 +12,7 @@
 		FA7250CF2038A47E0066C631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7250CD2038A47E0066C631 /* Main.storyboard */; };
 		FA7250D12038A47E0066C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7250D02038A47E0066C631 /* Assets.xcassets */; };
 		FA7250D42038A47E0066C631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7250D22038A47E0066C631 /* LaunchScreen.storyboard */; };
+		FA7250EE2038A7700066C631 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250ED2038A7700066C631 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FA7250D02038A47E0066C631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7250D32038A47E0066C631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7250D52038A47E0066C631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7250ED2038A7700066C631 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		FA7250EC2038A7060066C631 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250ED2038A7700066C631 /* APIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7250CA2038A47E0066C631 /* AppDelegate.swift in Sources */,
+				FA7250EE2038A7700066C631 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

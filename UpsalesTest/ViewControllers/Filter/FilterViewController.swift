@@ -39,6 +39,7 @@ class FilterViewController: UIViewController {
     //MARK:- UI setup
     func setupViews() {
         title = viewControlelrTitle
+        automaticallyAdjustsScrollViewInsets = false
         let companiesCellNib = UINib(nibName: filterCellNibName, bundle: Bundle.main)
         filterTableView.register(companiesCellNib, forCellReuseIdentifier: filterCellNibName)
         filterTableView.delegate = self

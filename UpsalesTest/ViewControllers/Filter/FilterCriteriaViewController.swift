@@ -25,6 +25,7 @@ class FilterCriteriaViewController: UIViewController {
     //MARK:- Setup UI
     func setupViews() {
         title = "Filters"
+        automaticallyAdjustsScrollViewInsets = false
         let filterCellNib = UINib(nibName: filterCriteriaCellNibName, bundle: Bundle.main)
         fitlerCriteriaTableView.register(filterCellNib, forCellReuseIdentifier: filterCriteriaCellNibName)
         fitlerCriteriaTableView.delegate = self

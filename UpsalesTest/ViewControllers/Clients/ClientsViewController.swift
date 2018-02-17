@@ -45,6 +45,7 @@ class ClientsViewController: UIViewController {
     
     private func setupViews() {
         title = viewControllerTitle
+        automaticallyAdjustsScrollViewInsets = false
     }
     
     //MARK:- Loading indicator

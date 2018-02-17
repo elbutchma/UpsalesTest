@@ -17,6 +17,12 @@
 		FA7250F32038A83A0066C631 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250F22038A83A0066C631 /* RootNavigationController.swift */; };
 		FA7250F62038A8A00066C631 /* UIColor+upsales.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250F52038A8A00066C631 /* UIColor+upsales.swift */; };
 		FA7250F82038AA820066C631 /* ClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250F72038AA820066C631 /* ClientsViewController.swift */; };
+		FA7250FC2038AC2C0066C631 /* ClientsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250FB2038AC2C0066C631 /* ClientsRepository.swift */; };
+		FA7250FE2038ACE90066C631 /* FetchClientsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250FD2038ACE90066C631 /* FetchClientsListUseCase.swift */; };
+		FA7251002038AD550066C631 /* ClientsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250FF2038AD550066C631 /* ClientsPresenter.swift */; };
+		FA7251022038ADDF0066C631 /* ClientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251012038ADDF0066C631 /* ClientsList.swift */; };
+		FA7251042038ADFC0066C631 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251032038ADFC0066C631 /* Client.swift */; };
+		FA7251062038AE2F0066C631 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251052038AE2F0066C631 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		FA7250F22038A83A0066C631 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		FA7250F52038A8A00066C631 /* UIColor+upsales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+upsales.swift"; sourceTree = "<group>"; };
 		FA7250F72038AA820066C631 /* ClientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewController.swift; sourceTree = "<group>"; };
+		FA7250FB2038AC2C0066C631 /* ClientsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsRepository.swift; sourceTree = "<group>"; };
+		FA7250FD2038ACE90066C631 /* FetchClientsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchClientsListUseCase.swift; sourceTree = "<group>"; };
+		FA7250FF2038AD550066C631 /* ClientsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsPresenter.swift; sourceTree = "<group>"; };
+		FA7251012038ADDF0066C631 /* ClientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsList.swift; sourceTree = "<group>"; };
+		FA7251032038ADFC0066C631 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		FA7251052038AE2F0066C631 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,8 @@
 		FA7250DB2038A7060066C631 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250FA2038AC110066C631 /* Client */,
+				FA7250F92038AC110066C631 /* Filters */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -201,6 +215,7 @@
 		FA7250E72038A7060066C631 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250FF2038AD550066C631 /* ClientsPresenter.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -224,6 +239,7 @@
 		FA7250EA2038A7060066C631 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250FD2038ACE90066C631 /* FetchClientsListUseCase.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -231,6 +247,9 @@
 		FA7250EB2038A7060066C631 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA7251012038ADDF0066C631 /* ClientsList.swift */,
+				FA7251032038ADFC0066C631 /* Client.swift */,
+				FA7251052038AE2F0066C631 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,6 +277,21 @@
 				FA7250F52038A8A00066C631 /* UIColor+upsales.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FA7250F92038AC110066C631 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		FA7250FA2038AC110066C631 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				FA7250FB2038AC2C0066C631 /* ClientsRepository.swift */,
+			);
+			path = Client;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,11 +428,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7250CA2038A47E0066C631 /* AppDelegate.swift in Sources */,
+				FA7250FE2038ACE90066C631 /* FetchClientsListUseCase.swift in Sources */,
+				FA7251022038ADDF0066C631 /* ClientsList.swift in Sources */,
 				FA7250F32038A83A0066C631 /* RootNavigationController.swift in Sources */,
+				FA7251042038ADFC0066C631 /* Client.swift in Sources */,
 				FA7250EE2038A7700066C631 /* APIClient.swift in Sources */,
 				FA7250F82038AA820066C631 /* ClientsViewController.swift in Sources */,
+				FA7250FC2038AC2C0066C631 /* ClientsRepository.swift in Sources */,
+				FA7251062038AE2F0066C631 /* User.swift in Sources */,
 				FA7250F12038A7E50066C631 /* ApiConstants.swift in Sources */,
 				FA7250F62038A8A00066C631 /* UIColor+upsales.swift in Sources */,
+				FA7251002038AD550066C631 /* ClientsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

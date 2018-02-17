@@ -13,6 +13,10 @@
 		FA7250D12038A47E0066C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7250D02038A47E0066C631 /* Assets.xcassets */; };
 		FA7250D42038A47E0066C631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7250D22038A47E0066C631 /* LaunchScreen.storyboard */; };
 		FA7250EE2038A7700066C631 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250ED2038A7700066C631 /* APIClient.swift */; };
+		FA7250F12038A7E50066C631 /* ApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250F02038A7E50066C631 /* ApiConstants.swift */; };
+		FA7250F32038A83A0066C631 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250F22038A83A0066C631 /* RootNavigationController.swift */; };
+		FA7250F62038A8A00066C631 /* UIColor+upsales.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250F52038A8A00066C631 /* UIColor+upsales.swift */; };
+		FA7250F82038AA820066C631 /* ClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250F72038AA820066C631 /* ClientsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		FA7250D32038A47E0066C631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7250D52038A47E0066C631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7250ED2038A7700066C631 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FA7250F02038A7E50066C631 /* ApiConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstants.swift; sourceTree = "<group>"; };
+		FA7250F22038A83A0066C631 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		FA7250F52038A8A00066C631 /* UIColor+upsales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+upsales.swift"; sourceTree = "<group>"; };
+		FA7250F72038AA820066C631 /* ClientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 		FA7250C82038A47E0066C631 /* UpsalesTest */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250F42038A8730066C631 /* Utilities */,
 				FA7250E02038A7060066C631 /* CustomViews */,
 				FA7250EB2038A7060066C631 /* Models */,
 				FA7250EC2038A7060066C631 /* Networking */,
@@ -114,6 +123,7 @@
 		FA7250DD2038A7060066C631 /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250F72038AA820066C631 /* ClientsViewController.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -128,6 +138,7 @@
 		FA7250DF2038A7060066C631 /* NavigationControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250F22038A83A0066C631 /* RootNavigationController.swift */,
 			);
 			path = NavigationControllers;
 			sourceTree = "<group>";
@@ -227,9 +238,26 @@
 		FA7250EC2038A7060066C631 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250EF2038A7D80066C631 /* Constants */,
 				FA7250ED2038A7700066C631 /* APIClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		FA7250EF2038A7D80066C631 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA7250F02038A7E50066C631 /* ApiConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA7250F42038A8730066C631 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA7250F52038A8A00066C631 /* UIColor+upsales.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7250CA2038A47E0066C631 /* AppDelegate.swift in Sources */,
+				FA7250F32038A83A0066C631 /* RootNavigationController.swift in Sources */,
 				FA7250EE2038A7700066C631 /* APIClient.swift in Sources */,
+				FA7250F82038AA820066C631 /* ClientsViewController.swift in Sources */,
+				FA7250F12038A7E50066C631 /* ApiConstants.swift in Sources */,
+				FA7250F62038A8A00066C631 /* UIColor+upsales.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

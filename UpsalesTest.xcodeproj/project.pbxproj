@@ -30,6 +30,10 @@
 		FA7251102038B24D0066C631 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72510F2038B24D0066C631 /* UIUtilities.swift */; };
 		FA7251132038B34A0066C631 /* Filters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7251122038B34A0066C631 /* Filters.storyboard */; };
 		FA7251152038B3960066C631 /* FiltersNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251142038B3960066C631 /* FiltersNavigationController.swift */; };
+		FA7251172038B4860066C631 /* FilterCriteriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251162038B4860066C631 /* FilterCriteriaViewController.swift */; };
+		FA72511C2038B4E50066C631 /* FilterCriteriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72511A2038B4E50066C631 /* FilterCriteriaTableViewCell.swift */; };
+		FA72511D2038B4E50066C631 /* FilterCriteriaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA72511B2038B4E50066C631 /* FilterCriteriaTableViewCell.xib */; };
+		FA72511F2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72511E2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +64,10 @@
 		FA72510F2038B24D0066C631 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 		FA7251122038B34A0066C631 /* Filters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filters.storyboard; sourceTree = "<group>"; };
 		FA7251142038B3960066C631 /* FiltersNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersNavigationController.swift; sourceTree = "<group>"; };
+		FA7251162038B4860066C631 /* FilterCriteriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCriteriaViewController.swift; sourceTree = "<group>"; };
+		FA72511A2038B4E50066C631 /* FilterCriteriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterCriteriaTableViewCell.swift; path = ../../../../../../../../Documents/UpsalesTest/UpSalesTest/UpSalesTest/CustomViews/Cells/FilterCriteriaTableViewCell.swift; sourceTree = "<group>"; };
+		FA72511B2038B4E50066C631 /* FilterCriteriaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilterCriteriaTableViewCell.xib; path = ../../../../../../../../Documents/UpsalesTest/UpSalesTest/UpSalesTest/CustomViews/Cells/FilterCriteriaTableViewCell.xib; sourceTree = "<group>"; };
+		FA72511E2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterCriteriaViewController+UITableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,8 @@
 		FA7250DE2038A7060066C631 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				FA7251162038B4860066C631 /* FilterCriteriaViewController.swift */,
+				FA72511E2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -211,6 +221,8 @@
 		FA7250E42038A7060066C631 /* FilterCriteriaCell */ = {
 			isa = PBXGroup;
 			children = (
+				FA72511A2038B4E50066C631 /* FilterCriteriaTableViewCell.swift */,
+				FA72511B2038B4E50066C631 /* FilterCriteriaTableViewCell.xib */,
 			);
 			path = FilterCriteriaCell;
 			sourceTree = "<group>";
@@ -387,6 +399,7 @@
 			files = (
 				FA7250D42038A47E0066C631 /* LaunchScreen.storyboard in Resources */,
 				FA7250D12038A47E0066C631 /* Assets.xcassets in Resources */,
+				FA72511D2038B4E50066C631 /* FilterCriteriaTableViewCell.xib in Resources */,
 				FA72510C2038B0070066C631 /* ClientsTableViewCell.xib in Resources */,
 				FA7251132038B34A0066C631 /* Filters.storyboard in Resources */,
 				FA7250CF2038A47E0066C631 /* Main.storyboard in Resources */,
@@ -461,10 +474,13 @@
 				FA7251152038B3960066C631 /* FiltersNavigationController.swift in Sources */,
 				FA7251082038AF840066C631 /* ClientsViewController+UITableView.swift in Sources */,
 				FA72510E2038B1ED0066C631 /* ClientsViewController+PresentationDelegate.swift in Sources */,
+				FA7251172038B4860066C631 /* FilterCriteriaViewController.swift in Sources */,
 				FA7250CA2038A47E0066C631 /* AppDelegate.swift in Sources */,
+				FA72511C2038B4E50066C631 /* FilterCriteriaTableViewCell.swift in Sources */,
 				FA7250FE2038ACE90066C631 /* FetchClientsListUseCase.swift in Sources */,
 				FA7251022038ADDF0066C631 /* ClientsList.swift in Sources */,
 				FA7250F32038A83A0066C631 /* RootNavigationController.swift in Sources */,
+				FA72511F2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift in Sources */,
 				FA7251102038B24D0066C631 /* UIUtilities.swift in Sources */,
 				FA7251042038ADFC0066C631 /* Client.swift in Sources */,
 				FA7250EE2038A7700066C631 /* APIClient.swift in Sources */,

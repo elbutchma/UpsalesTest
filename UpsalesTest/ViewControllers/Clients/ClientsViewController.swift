@@ -65,6 +65,8 @@ class ClientsViewController: UIViewController {
     }
     
     @objc private func filterAction() {
+        let filterCriteriaNavigationController = FiltersNavigationController.instantiateFromStoryboard()
+        navigationController?.present(filterCriteriaNavigationController, animated: true, completion: {})
     }
     
     private func setupNavigationBarItems() {

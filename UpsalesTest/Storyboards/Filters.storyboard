@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,10 +24,60 @@
                             <color key="textColor" red="0.019607843140000001" green="0.1647058824" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
+                    <connections>
+                        <segue destination="f8W-kB-hCl" kind="relationship" relationship="rootViewController" id="G0C-mX-8q9"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rc-JK-Iit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="175" y="-269"/>
+        </scene>
+        <!--Filter Criteria View Controller-->
+        <scene sceneID="N8z-Q3-rvO">
+            <objects>
+                <viewController storyboardIdentifier="FilterCriteriaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f8W-kB-hCl" customClass="FilterCriteriaViewController" customModule="UpsalesTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9nZ-8C-zhb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="avW-2O-rsF">
+                                <rect key="frame" x="0.0" y="116" width="375" height="477"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggs-Cw-SMb">
+                                <rect key="frame" x="0.0" y="593" width="375" height="74"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="Qg8-0r-05z"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonAction:" destination="f8W-kB-hCl" eventType="touchUpInside" id="EIa-9u-fhd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ggs-Cw-SMb" firstAttribute="top" secondItem="avW-2O-rsF" secondAttribute="bottom" id="CSb-2F-j8W"/>
+                            <constraint firstItem="ggs-Cw-SMb" firstAttribute="bottom" secondItem="6Ce-4P-dPM" secondAttribute="bottom" id="MV4-ZZ-MqH"/>
+                            <constraint firstItem="ggs-Cw-SMb" firstAttribute="leading" secondItem="9nZ-8C-zhb" secondAttribute="leading" id="TEL-Aj-JbQ"/>
+                            <constraint firstItem="6Ce-4P-dPM" firstAttribute="trailing" secondItem="ggs-Cw-SMb" secondAttribute="trailing" id="Xbj-J8-gbO"/>
+                            <constraint firstItem="avW-2O-rsF" firstAttribute="leading" secondItem="6Ce-4P-dPM" secondAttribute="leading" id="bLe-lN-h2E"/>
+                            <constraint firstItem="6Ce-4P-dPM" firstAttribute="trailing" secondItem="avW-2O-rsF" secondAttribute="trailing" id="hIK-Cj-Dhe"/>
+                            <constraint firstItem="avW-2O-rsF" firstAttribute="top" secondItem="6Ce-4P-dPM" secondAttribute="top" id="ikk-pd-6sj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ce-4P-dPM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dmn-NH-fSK"/>
+                    <connections>
+                        <outlet property="fitlerCriteriaTableView" destination="avW-2O-rsF" id="vev-ng-FU0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0QW-4Q-k1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="-269.41529235382313"/>
         </scene>
     </scenes>
 </document>

@@ -18,7 +18,7 @@ class ClientsViewController: UIViewController {
     let viewControllerTitle = "Companies"
     var clientsPresenter: ClientsPresenter?
     let clientsTableViewCellIdentifier = "ClientsTableViewCell"
-    var clientsList = ClientsList() {
+    internal var clientsList = ClientsList() {
         didSet {
             clientsTableView.reloadData()
         }
@@ -48,11 +48,11 @@ class ClientsViewController: UIViewController {
     }
     
     //MARK:- Loading indicator
-    func showLoadingIndicator() {
+    internal func showLoadingIndicator() {
         SVProgressHUD.show()
     }
     
-    func hideLoadingIndicator() {
+    internal func hideLoadingIndicator() {
         SVProgressHUD.dismiss()
     }
     

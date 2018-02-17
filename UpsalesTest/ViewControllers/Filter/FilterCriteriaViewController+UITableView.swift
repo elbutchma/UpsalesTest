@@ -20,7 +20,8 @@ extension FilterCriteriaViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        let filtersViewController = FilterViewController.instantiateFromStoryboard()
+        navigationController?.pushViewController(filtersViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

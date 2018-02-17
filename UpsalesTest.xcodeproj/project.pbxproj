@@ -34,6 +34,14 @@
 		FA72511C2038B4E50066C631 /* FilterCriteriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72511A2038B4E50066C631 /* FilterCriteriaTableViewCell.swift */; };
 		FA72511D2038B4E50066C631 /* FilterCriteriaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA72511B2038B4E50066C631 /* FilterCriteriaTableViewCell.xib */; };
 		FA72511F2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72511E2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift */; };
+		FA7251212038B6C50066C631 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251202038B6C50066C631 /* FilterViewController.swift */; };
+		FA7251232038B7610066C631 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251222038B7610066C631 /* Manager.swift */; };
+		FA7251252038B78D0066C631 /* FilterUsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251242038B78D0066C631 /* FilterUsersPresenter.swift */; };
+		FA7251272038B7BE0066C631 /* FiltersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251262038B7BE0066C631 /* FiltersUseCase.swift */; };
+		FA7251292038B7DE0066C631 /* FiltersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251282038B7DE0066C631 /* FiltersRepository.swift */; };
+		FA72512C2038B8850066C631 /* FilterUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72512A2038B8850066C631 /* FilterUsersTableViewCell.swift */; };
+		FA72512D2038B8850066C631 /* FilterUsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA72512B2038B8850066C631 /* FilterUsersTableViewCell.xib */; };
+		FA72512F2038B9400066C631 /* FilterViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72512E2038B9400066C631 /* FilterViewController+UITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +76,14 @@
 		FA72511A2038B4E50066C631 /* FilterCriteriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterCriteriaTableViewCell.swift; path = ../../../../../../../../Documents/UpsalesTest/UpSalesTest/UpSalesTest/CustomViews/Cells/FilterCriteriaTableViewCell.swift; sourceTree = "<group>"; };
 		FA72511B2038B4E50066C631 /* FilterCriteriaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilterCriteriaTableViewCell.xib; path = ../../../../../../../../Documents/UpsalesTest/UpSalesTest/UpSalesTest/CustomViews/Cells/FilterCriteriaTableViewCell.xib; sourceTree = "<group>"; };
 		FA72511E2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterCriteriaViewController+UITableView.swift"; sourceTree = "<group>"; };
+		FA7251202038B6C50066C631 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		FA7251222038B7610066C631 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		FA7251242038B78D0066C631 /* FilterUsersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterUsersPresenter.swift; sourceTree = "<group>"; };
+		FA7251262038B7BE0066C631 /* FiltersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersUseCase.swift; sourceTree = "<group>"; };
+		FA7251282038B7DE0066C631 /* FiltersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersRepository.swift; sourceTree = "<group>"; };
+		FA72512A2038B8850066C631 /* FilterUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterUsersTableViewCell.swift; sourceTree = "<group>"; };
+		FA72512B2038B8850066C631 /* FilterUsersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterUsersTableViewCell.xib; sourceTree = "<group>"; };
+		FA72512E2038B9400066C631 /* FilterViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterViewController+UITableView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +187,8 @@
 			children = (
 				FA7251162038B4860066C631 /* FilterCriteriaViewController.swift */,
 				FA72511E2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift */,
+				FA7251202038B6C50066C631 /* FilterViewController.swift */,
+				FA72512E2038B9400066C631 /* FilterViewController+UITableView.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -214,6 +232,8 @@
 		FA7250E32038A7060066C631 /* FilterCell */ = {
 			isa = PBXGroup;
 			children = (
+				FA72512A2038B8850066C631 /* FilterUsersTableViewCell.swift */,
+				FA72512B2038B8850066C631 /* FilterUsersTableViewCell.xib */,
 			);
 			path = FilterCell;
 			sourceTree = "<group>";
@@ -239,6 +259,7 @@
 		FA7250E62038A7060066C631 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				FA7251242038B78D0066C631 /* FilterUsersPresenter.swift */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -263,6 +284,7 @@
 		FA7250E92038A7060066C631 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				FA7251262038B7BE0066C631 /* FiltersUseCase.swift */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -280,6 +302,7 @@
 			children = (
 				FA7251012038ADDF0066C631 /* ClientsList.swift */,
 				FA7251032038ADFC0066C631 /* Client.swift */,
+				FA7251222038B7610066C631 /* Manager.swift */,
 				FA7251052038AE2F0066C631 /* User.swift */,
 			);
 			path = Models;
@@ -314,6 +337,7 @@
 		FA7250F92038AC110066C631 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				FA7251282038B7DE0066C631 /* FiltersRepository.swift */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -398,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7250D42038A47E0066C631 /* LaunchScreen.storyboard in Resources */,
+				FA72512D2038B8850066C631 /* FilterUsersTableViewCell.xib in Resources */,
 				FA7250D12038A47E0066C631 /* Assets.xcassets in Resources */,
 				FA72511D2038B4E50066C631 /* FilterCriteriaTableViewCell.xib in Resources */,
 				FA72510C2038B0070066C631 /* ClientsTableViewCell.xib in Resources */,
@@ -471,6 +496,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7251212038B6C50066C631 /* FilterViewController.swift in Sources */,
 				FA7251152038B3960066C631 /* FiltersNavigationController.swift in Sources */,
 				FA7251082038AF840066C631 /* ClientsViewController+UITableView.swift in Sources */,
 				FA72510E2038B1ED0066C631 /* ClientsViewController+PresentationDelegate.swift in Sources */,
@@ -479,16 +505,22 @@
 				FA72511C2038B4E50066C631 /* FilterCriteriaTableViewCell.swift in Sources */,
 				FA7250FE2038ACE90066C631 /* FetchClientsListUseCase.swift in Sources */,
 				FA7251022038ADDF0066C631 /* ClientsList.swift in Sources */,
+				FA7251272038B7BE0066C631 /* FiltersUseCase.swift in Sources */,
 				FA7250F32038A83A0066C631 /* RootNavigationController.swift in Sources */,
 				FA72511F2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift in Sources */,
+				FA72512F2038B9400066C631 /* FilterViewController+UITableView.swift in Sources */,
+				FA7251292038B7DE0066C631 /* FiltersRepository.swift in Sources */,
 				FA7251102038B24D0066C631 /* UIUtilities.swift in Sources */,
 				FA7251042038ADFC0066C631 /* Client.swift in Sources */,
+				FA7251252038B78D0066C631 /* FilterUsersPresenter.swift in Sources */,
 				FA7250EE2038A7700066C631 /* APIClient.swift in Sources */,
 				FA7250F82038AA820066C631 /* ClientsViewController.swift in Sources */,
 				FA72510B2038B0070066C631 /* ClientsTableViewCell.swift in Sources */,
 				FA7250FC2038AC2C0066C631 /* ClientsRepository.swift in Sources */,
 				FA7251062038AE2F0066C631 /* User.swift in Sources */,
 				FA7250F12038A7E50066C631 /* ApiConstants.swift in Sources */,
+				FA72512C2038B8850066C631 /* FilterUsersTableViewCell.swift in Sources */,
+				FA7251232038B7610066C631 /* Manager.swift in Sources */,
 				FA7250F62038A8A00066C631 /* UIColor+upsales.swift in Sources */,
 				FA7251002038AD550066C631 /* ClientsPresenter.swift in Sources */,
 			);

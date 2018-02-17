@@ -20,9 +20,12 @@ class FiltersNavigationController: UINavigationController {
     //MARK:- UI configuration
     func setupNavigationBarStyles() {
         let navigationBarAppearace = UINavigationBar.appearance()
-        navigationBar.prefersLargeTitles = true
         navigationBar.barTintColor = UIColor.white
         navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.upsalesDarkBlueColor()]
+      
+        if #available(iOS 11.0, *) {
+            navigationBar.prefersLargeTitles = true
+        }
     }
     
     //MARK:- Instantiation

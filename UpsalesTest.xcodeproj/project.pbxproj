@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AF7D400B5DD46027C59ACA76 /* Pods_UpsalesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBF4982B87698BE98E54DF4 /* Pods_UpsalesTest.framework */; };
 		FA7250CA2038A47E0066C631 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250C92038A47E0066C631 /* AppDelegate.swift */; };
-		FA7250CC2038A47E0066C631 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7250CB2038A47E0066C631 /* ViewController.swift */; };
 		FA7250CF2038A47E0066C631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7250CD2038A47E0066C631 /* Main.storyboard */; };
 		FA7250D12038A47E0066C631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7250D02038A47E0066C631 /* Assets.xcassets */; };
 		FA7250D42038A47E0066C631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7250D22038A47E0066C631 /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 		C6B52E03F66C8622E9BDEE23 /* Pods-UpsalesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpsalesTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UpsalesTest/Pods-UpsalesTest.debug.xcconfig"; sourceTree = "<group>"; };
 		FA7250C62038A47E0066C631 /* UpsalesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpsalesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7250C92038A47E0066C631 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA7250CB2038A47E0066C631 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA7250CE2038A47E0066C631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA7250D02038A47E0066C631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7250D32038A47E0066C631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,14 +76,157 @@
 		FA7250C82038A47E0066C631 /* UpsalesTest */ = {
 			isa = PBXGroup;
 			children = (
+				FA7250E02038A7060066C631 /* CustomViews */,
+				FA7250EB2038A7060066C631 /* Models */,
+				FA7250EC2038A7060066C631 /* Networking */,
+				FA7250E52038A7060066C631 /* Presenters */,
+				FA7250DB2038A7060066C631 /* Repositories */,
+				FA7250E82038A7060066C631 /* UseCases */,
+				FA7250DC2038A7060066C631 /* ViewControllers */,
 				FA7250C92038A47E0066C631 /* AppDelegate.swift */,
-				FA7250CB2038A47E0066C631 /* ViewController.swift */,
 				FA7250CD2038A47E0066C631 /* Main.storyboard */,
 				FA7250D02038A47E0066C631 /* Assets.xcassets */,
 				FA7250D22038A47E0066C631 /* LaunchScreen.storyboard */,
 				FA7250D52038A47E0066C631 /* Info.plist */,
 			);
 			path = UpsalesTest;
+			sourceTree = "<group>";
+		};
+		FA7250DB2038A7060066C631 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FA7250DC2038A7060066C631 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7250DD2038A7060066C631 /* Clients */,
+				FA7250DE2038A7060066C631 /* Filter */,
+				FA7250DF2038A7060066C631 /* NavigationControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA7250DD2038A7060066C631 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		FA7250DE2038A7060066C631 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		FA7250DF2038A7060066C631 /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		FA7250E02038A7060066C631 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA7250E12038A7060066C631 /* CustomCells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FA7250E12038A7060066C631 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				FA7250E22038A7060066C631 /* ClientsCell */,
+				FA7250E32038A7060066C631 /* FilterCell */,
+				FA7250E42038A7060066C631 /* FilterCriteriaCell */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		FA7250E22038A7060066C631 /* ClientsCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ClientsCell;
+			sourceTree = "<group>";
+		};
+		FA7250E32038A7060066C631 /* FilterCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FilterCell;
+			sourceTree = "<group>";
+		};
+		FA7250E42038A7060066C631 /* FilterCriteriaCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FilterCriteriaCell;
+			sourceTree = "<group>";
+		};
+		FA7250E52038A7060066C631 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				FA7250E62038A7060066C631 /* Filters */,
+				FA7250E72038A7060066C631 /* Clients */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		FA7250E62038A7060066C631 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		FA7250E72038A7060066C631 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		FA7250E82038A7060066C631 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				FA7250E92038A7060066C631 /* Filters */,
+				FA7250EA2038A7060066C631 /* Clients */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FA7250E92038A7060066C631 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		FA7250EA2038A7060066C631 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		FA7250EB2038A7060066C631 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA7250EC2038A7060066C631 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +362,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7250CC2038A47E0066C631 /* ViewController.swift in Sources */,
 				FA7250CA2038A47E0066C631 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

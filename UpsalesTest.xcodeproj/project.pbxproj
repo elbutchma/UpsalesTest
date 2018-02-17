@@ -23,6 +23,11 @@
 		FA7251022038ADDF0066C631 /* ClientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251012038ADDF0066C631 /* ClientsList.swift */; };
 		FA7251042038ADFC0066C631 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251032038ADFC0066C631 /* Client.swift */; };
 		FA7251062038AE2F0066C631 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251052038AE2F0066C631 /* User.swift */; };
+		FA7251082038AF840066C631 /* ClientsViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251072038AF840066C631 /* ClientsViewController+UITableView.swift */; };
+		FA72510B2038B0070066C631 /* ClientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251092038B0070066C631 /* ClientsTableViewCell.swift */; };
+		FA72510C2038B0070066C631 /* ClientsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA72510A2038B0070066C631 /* ClientsTableViewCell.xib */; };
+		FA72510E2038B1ED0066C631 /* ClientsViewController+PresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72510D2038B1ED0066C631 /* ClientsViewController+PresentationDelegate.swift */; };
+		FA7251102038B24D0066C631 /* UIUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72510F2038B24D0066C631 /* UIUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		FA7251012038ADDF0066C631 /* ClientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsList.swift; sourceTree = "<group>"; };
 		FA7251032038ADFC0066C631 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		FA7251052038AE2F0066C631 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA7251072038AF840066C631 /* ClientsViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientsViewController+UITableView.swift"; sourceTree = "<group>"; };
+		FA7251092038B0070066C631 /* ClientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTableViewCell.swift; sourceTree = "<group>"; };
+		FA72510A2038B0070066C631 /* ClientsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientsTableViewCell.xib; sourceTree = "<group>"; };
+		FA72510D2038B1ED0066C631 /* ClientsViewController+PresentationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientsViewController+PresentationDelegate.swift"; sourceTree = "<group>"; };
+		FA72510F2038B24D0066C631 /* UIUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				FA7250F72038AA820066C631 /* ClientsViewController.swift */,
+				FA7251072038AF840066C631 /* ClientsViewController+UITableView.swift */,
+				FA72510D2038B1ED0066C631 /* ClientsViewController+PresentationDelegate.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -178,6 +190,8 @@
 		FA7250E22038A7060066C631 /* ClientsCell */ = {
 			isa = PBXGroup;
 			children = (
+				FA7251092038B0070066C631 /* ClientsTableViewCell.swift */,
+				FA72510A2038B0070066C631 /* ClientsTableViewCell.xib */,
 			);
 			path = ClientsCell;
 			sourceTree = "<group>";
@@ -275,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7250F52038A8A00066C631 /* UIColor+upsales.swift */,
+				FA72510F2038B24D0066C631 /* UIUtilities.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -358,6 +373,7 @@
 			files = (
 				FA7250D42038A47E0066C631 /* LaunchScreen.storyboard in Resources */,
 				FA7250D12038A47E0066C631 /* Assets.xcassets in Resources */,
+				FA72510C2038B0070066C631 /* ClientsTableViewCell.xib in Resources */,
 				FA7250CF2038A47E0066C631 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,13 +443,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7251082038AF840066C631 /* ClientsViewController+UITableView.swift in Sources */,
+				FA72510E2038B1ED0066C631 /* ClientsViewController+PresentationDelegate.swift in Sources */,
 				FA7250CA2038A47E0066C631 /* AppDelegate.swift in Sources */,
 				FA7250FE2038ACE90066C631 /* FetchClientsListUseCase.swift in Sources */,
 				FA7251022038ADDF0066C631 /* ClientsList.swift in Sources */,
 				FA7250F32038A83A0066C631 /* RootNavigationController.swift in Sources */,
+				FA7251102038B24D0066C631 /* UIUtilities.swift in Sources */,
 				FA7251042038ADFC0066C631 /* Client.swift in Sources */,
 				FA7250EE2038A7700066C631 /* APIClient.swift in Sources */,
 				FA7250F82038AA820066C631 /* ClientsViewController.swift in Sources */,
+				FA72510B2038B0070066C631 /* ClientsTableViewCell.swift in Sources */,
 				FA7250FC2038AC2C0066C631 /* ClientsRepository.swift in Sources */,
 				FA7251062038AE2F0066C631 /* User.swift in Sources */,
 				FA7250F12038A7E50066C631 /* ApiConstants.swift in Sources */,

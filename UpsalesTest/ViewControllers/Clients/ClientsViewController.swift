@@ -16,25 +16,52 @@ class ClientsViewController: UIViewController {
     
     //MARK:- Properties
     let viewControllerTitle = "Companies"
+    var clientsPresenter: ClientsPresenter?
+    let clientsTableViewCellIdentifier = "ClientsTableViewCell"
+    var clientsList = ClientsList() {
+        didSet {
+            clientsTableView.reloadData()
+        }
+    }
     
     //MARK:- ViewController life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViews()
+        setupTableView()
         setupNavigationBarItems()
+        setupPresenter()
+    }
+    
+    //MARK:- UI setup
+    private func setupTableView() {
+        let clientsCellNib = UINib(nibName: clientsTableViewCellIdentifier, bundle: Bundle.main)
+        clientsTableView.register(clientsCellNib, forCellReuseIdentifier: clientsTableViewCellIdentifier)
+        clientsTableView.delegate = self
+        clientsTableView.dataSource = self
+        clientsTableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     private func setupViews() {
         title = viewControllerTitle
     }
     
-    private func showLoadingIndicator() {
+    //MARK:- Loading indicator
+    func showLoadingIndicator() {
         SVProgressHUD.show()
     }
     
-    private func hideLoadingIndicator() {
+    func hideLoadingIndicator() {
         SVProgressHUD.dismiss()
+    }
+    
+    //MARK:- Presenter
+    private func setupPresenter() {
+        clientsPresenter = ClientsPresenter()
+        clientsPresenter?.presentationDelegate = self
+        showLoadingIndicator()
+        clientsPresenter?.start()
     }
     
     @objc private func filterAction() {

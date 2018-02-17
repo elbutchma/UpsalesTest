@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ClientsTableViewCell" rowHeight="57" id="KGk-i7-Jjw" customClass="ClientsTableViewCell" customModule="UpsalesTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yA-9L-QO9">
+                        <rect key="frame" x="16" y="9" width="288" height="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-CS-kLu">
+                        <rect key="frame" x="44" y="32" width="260" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account-icon" translatesAutoresizingMaskIntoConstraints="NO" id="uUN-XZ-nyN">
+                        <rect key="frame" x="16" y="29" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6Mn-aQ-pJP"/>
+                            <constraint firstAttribute="height" constant="20" id="tWH-Y9-Fw4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4yA-9L-QO9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0Dw-Tx-0pK"/>
+                    <constraint firstItem="uUN-XZ-nyN" firstAttribute="leading" secondItem="4yA-9L-QO9" secondAttribute="leading" id="EXZ-8N-PFz"/>
+                    <constraint firstAttribute="trailing" secondItem="2iu-CS-kLu" secondAttribute="trailing" constant="16" id="Hmi-N4-UYV"/>
+                    <constraint firstAttribute="trailing" secondItem="4yA-9L-QO9" secondAttribute="trailing" constant="16" id="NVt-8x-a3K"/>
+                    <constraint firstItem="4yA-9L-QO9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="atQ-df-PLf"/>
+                    <constraint firstAttribute="bottom" secondItem="2iu-CS-kLu" secondAttribute="bottom" constant="10" id="cm2-cf-3IY"/>
+                    <constraint firstItem="uUN-XZ-nyN" firstAttribute="leading" secondItem="4yA-9L-QO9" secondAttribute="leading" id="eKU-gi-2uM"/>
+                    <constraint firstItem="2iu-CS-kLu" firstAttribute="centerY" secondItem="uUN-XZ-nyN" secondAttribute="centerY" id="gSH-J6-m5I"/>
+                    <constraint firstItem="uUN-XZ-nyN" firstAttribute="top" secondItem="4yA-9L-QO9" secondAttribute="bottom" constant="3" id="hNI-Dw-IVs"/>
+                    <constraint firstItem="2iu-CS-kLu" firstAttribute="leading" secondItem="uUN-XZ-nyN" secondAttribute="trailing" constant="8" id="udg-3B-Mja"/>
+                    <constraint firstItem="uUN-XZ-nyN" firstAttribute="top" secondItem="4yA-9L-QO9" secondAttribute="bottom" constant="3" id="ye9-T7-DfE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="companyManagerLabel" destination="2iu-CS-kLu" id="ah9-Ev-Hqz"/>
+                <outlet property="companyNameLabel" destination="4yA-9L-QO9" id="QJL-Ba-qhh"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="60.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="account-icon" width="72" height="72"/>
+    </resources>
+</document>

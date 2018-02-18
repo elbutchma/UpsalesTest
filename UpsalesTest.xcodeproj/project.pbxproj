@@ -32,7 +32,6 @@
 		FA7251152038B3960066C631 /* FiltersNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251142038B3960066C631 /* FiltersNavigationController.swift */; };
 		FA7251172038B4860066C631 /* FilterCriteriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251162038B4860066C631 /* FilterCriteriaViewController.swift */; };
 		FA72511C2038B4E50066C631 /* FilterCriteriaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72511A2038B4E50066C631 /* FilterCriteriaTableViewCell.swift */; };
-		FA72511D2038B4E50066C631 /* FilterCriteriaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA72511B2038B4E50066C631 /* FilterCriteriaTableViewCell.xib */; };
 		FA72511F2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72511E2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift */; };
 		FA7251212038B6C50066C631 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251202038B6C50066C631 /* FilterViewController.swift */; };
 		FA7251232038B7610066C631 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251222038B7610066C631 /* Manager.swift */; };
@@ -44,6 +43,7 @@
 		FA72512F2038B9400066C631 /* FilterViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA72512E2038B9400066C631 /* FilterViewController+UITableView.swift */; };
 		FA7251312038EBBC0066C631 /* ClientsTableViewFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7251302038EBBC0066C631 /* ClientsTableViewFooterView.swift */; };
 		FA7251332038EBCF0066C631 /* ClientsTableViewFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7251322038EBCF0066C631 /* ClientsTableViewFooterView.xib */; };
+		FA725137203A06DA0066C631 /* FilterCriteriaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA725136203A06DA0066C631 /* FilterCriteriaTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +76,6 @@
 		FA7251142038B3960066C631 /* FiltersNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersNavigationController.swift; sourceTree = "<group>"; };
 		FA7251162038B4860066C631 /* FilterCriteriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCriteriaViewController.swift; sourceTree = "<group>"; };
 		FA72511A2038B4E50066C631 /* FilterCriteriaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FilterCriteriaTableViewCell.swift; path = ../../../../../../../../Documents/UpsalesTest/UpSalesTest/UpSalesTest/CustomViews/Cells/FilterCriteriaTableViewCell.swift; sourceTree = "<group>"; };
-		FA72511B2038B4E50066C631 /* FilterCriteriaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilterCriteriaTableViewCell.xib; path = ../../../../../../../../Documents/UpsalesTest/UpSalesTest/UpSalesTest/CustomViews/Cells/FilterCriteriaTableViewCell.xib; sourceTree = "<group>"; };
 		FA72511E2038B5E20066C631 /* FilterCriteriaViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterCriteriaViewController+UITableView.swift"; sourceTree = "<group>"; };
 		FA7251202038B6C50066C631 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		FA7251222038B7610066C631 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		FA72512E2038B9400066C631 /* FilterViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilterViewController+UITableView.swift"; sourceTree = "<group>"; };
 		FA7251302038EBBC0066C631 /* ClientsTableViewFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTableViewFooterView.swift; sourceTree = "<group>"; };
 		FA7251322038EBCF0066C631 /* ClientsTableViewFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientsTableViewFooterView.xib; sourceTree = "<group>"; };
+		FA725136203A06DA0066C631 /* FilterCriteriaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCriteriaTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,8 +247,8 @@
 		FA7250E42038A7060066C631 /* FilterCriteriaCell */ = {
 			isa = PBXGroup;
 			children = (
+				FA725136203A06DA0066C631 /* FilterCriteriaTableViewCell.xib */,
 				FA72511A2038B4E50066C631 /* FilterCriteriaTableViewCell.swift */,
-				FA72511B2038B4E50066C631 /* FilterCriteriaTableViewCell.xib */,
 			);
 			path = FilterCriteriaCell;
 			sourceTree = "<group>";
@@ -430,8 +430,8 @@
 				FA7250D42038A47E0066C631 /* LaunchScreen.storyboard in Resources */,
 				FA72512D2038B8850066C631 /* FilterUsersTableViewCell.xib in Resources */,
 				FA7250D12038A47E0066C631 /* Assets.xcassets in Resources */,
-				FA72511D2038B4E50066C631 /* FilterCriteriaTableViewCell.xib in Resources */,
 				FA72510C2038B0070066C631 /* ClientsTableViewCell.xib in Resources */,
+				FA725137203A06DA0066C631 /* FilterCriteriaTableViewCell.xib in Resources */,
 				FA7251132038B34A0066C631 /* Filters.storyboard in Resources */,
 				FA7251332038EBCF0066C631 /* ClientsTableViewFooterView.xib in Resources */,
 				FA7250CF2038A47E0066C631 /* Main.storyboard in Resources */,
